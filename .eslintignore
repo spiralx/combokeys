@@ -1,0 +1,12 @@
+# node_modules ignored by default
+vendor/
+
+# Ignore files compiled from TypeScript and CoffeeScript
+**/*.{ts,coffee}.js
+
+# Unused entries
+**/_*.js
+
+# Ignore built files except build/index.jsvendor/*
+build/
+dist/

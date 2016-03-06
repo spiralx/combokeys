@@ -1,0 +1,24 @@
+
+# Dependency directories
+node_modules/
+vendor/
+
+# Logs
+logs/
+*.log
+
+# Code coverage files and output
+lib-cov/
+coverage/
+build/
+dist/
+
+# Local editor files
+*.sublime-*
+
+# Runtime data
+pids/
+*.pid
+*.seed
+.lock-wscript
+stats.json

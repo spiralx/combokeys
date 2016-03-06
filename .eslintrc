@@ -1,0 +1,87 @@
+
+extends: 'eslint:recommended'
+
+
+parser:   babel-eslint
+
+
+env:
+  es6:                                  true
+  node:                                 true
+  browser:                              true
+  commonjs:                             true
+
+
+ecmaFeatures:
+  arrowFunctions:                       true
+  blockBindings:                        true
+  classes:                              true
+  defaultParams:                        true
+  destructuring:                        true
+  forOf:                                true
+  generators:                           true
+  modules:                              true
+  objectLiteralShorthandMethods:        true
+  objectLiteralShorthandProperties:     true
+  regexUFlag:                           true
+  regexYFlag:                           true
+  restParams:                           true
+  spread:                               true
+  superInFunctions:                     true
+  templateStrings:                      true
+  unicodeCodePointEscapes:              true
+
+
+globals:
+  angular:                              true
+  jQuery:                               true
+  '$':                                  false
+
+
+rules:
+  linebreak-style:          [1, 'windows']
+  max-len:                  [1, 120, 4]
+  eol-last:                 1
+  no-trailing-spaces:       [2, { "skipBlankLines": true }]
+  no-multiple-empty-lines:  [1, { 'max': 3 }]
+
+  indent:
+    - 1
+    - 2
+    - VariableDeclarator:
+        var: 2
+        let: 2
+        const: 3
+
+  lines-around-comment:
+    - 2
+    - beforeBlockComment:   true
+      beforeLineComment:    true
+      allowBlockStart:      true
+
+  brace-style:
+    - 2
+    - stroustrup
+    - allowSingleLine: true
+
+  quotes:                   [1, 'single']
+  space-in-parens:          [2, 'never']
+  semi:                     [1, 'never']
+  no-extra-semi:            1
+  no-empty:                 1
+
+  eqeqeq:                   [1, 'smart']
+
+  no-unused-vars:
+    - 1
+    - vars: 'local'
+      args: 'none'
+
+  array-bracket-spacing:    0
+
+  no-var:                   1
+  no-const-assign:          1
+  prefer-arrow-callback:    1
+  prefer-spread:            1
+  prefer-template:          1
+  no-console:               0
